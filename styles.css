@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Evita rolagem se a imagem for muito grande */
+}
+
+.background-image {
+    position: relative;
+    height: 100vh; /* 100% da altura da viewport */
+    background: url('istockphoto-157988244-612x612.jpg') no-repeat center center;
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
+}
+
+.overlay-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.overlay-image img {
+    max-width: 100%;
+    height: auto;
+}
